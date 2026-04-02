@@ -289,4 +289,4 @@ Looking for a specific topic? Here is where to find it in the codebase.
 ## Author
 
 Deyvid Adzhemiev — Senior Backend Engineer
-[LinkedIn](https://linkedin.com/in/your-profile) · [GitHub](https://github.com/your-username)
+[LinkedIn](https://www.linkedin.com/in/deyvid-adzhemiev-2913151a2/) ·

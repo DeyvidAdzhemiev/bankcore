@@ -9,9 +9,9 @@ you would encounter in a professional fintech system.
 Every component exists because it solves a real problem, not to check a box.
 
 **Core Java & Spring**
-Spring Boot 3, Spring Data JPA, Hibernate, Spring Security, Spring WebFlux, Spring AI,
+Spring Boot 3.5, Spring Data JPA, Hibernate, Spring Security, Spring WebFlux, Spring AI,
 bean scopes and lifecycle, `@Transactional` with isolation levels, N+1 query detection,
-Flyway migrations, HikariCP connection pooling, Java 21 virtual threads.
+Flyway migrations, HikariCP connection pooling, Java 25 virtual threads.
 
 **Concurrency & data integrity**
 Optimistic locking (`@Version`), pessimistic locking (`SELECT FOR UPDATE`), ACID transactions,
@@ -90,7 +90,7 @@ Inter-service communication is either synchronous REST (query) or asynchronous K
 
 ### Prerequisites
 
-- Java 21
+- Java 25
 - Docker + Docker Compose
 - Maven 3.9+
 
@@ -204,8 +204,8 @@ bankcore/
 
 | Layer | Technology |
 |---|---|
-| Language | Java 21 |
-| Framework | Spring Boot 3.3 |
+| Language | Java 25 |
+| Framework | Spring Boot 3.5 |
 | Persistence | Spring Data JPA, Hibernate, PostgreSQL |
 | Messaging | Apache Kafka, Avro, Schema Registry |
 | Caching | Redis, Spring Cache |
@@ -260,7 +260,7 @@ Looking for a specific topic? Here is where to find it in the codebase.
 | Spring Security filter chain | `auth-service/config/SecurityConfig.java` |
 | JWT generation + validation | `auth-service/service/JwtService.java` |
 | Redis distributed cache | `account-service/config/CacheConfig.java` |
-| Virtual threads (Java 21) | `fraud-service/config/ThreadConfig.java` |
+| Virtual threads (Java 25) | `fraud-service/config/ThreadConfig.java` |
 | Strategy pattern (fraud rules) | `fraud-service/rules/FraudRuleEngine.java` |
 | Immutable audit log | `audit-service/service/AuditEventHandler.java` |
 | Money value object | `bankcore-common/util/Money.java` |

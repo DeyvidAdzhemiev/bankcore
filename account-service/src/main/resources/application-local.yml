@@ -1,0 +1,16 @@
+spring:
+  cache:
+    type: simple
+  data:
+    redis:
+      repositories:
+        enabled: false
+
+management:
+  health:
+    redis:
+      enabled: false
+
+logging:
+  level:
+    com.bankcore.account: DEBUG
